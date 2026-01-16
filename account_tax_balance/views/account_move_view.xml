@@ -25,7 +25,7 @@
             </field>
         </field>
     </record>
-    <record id="view_account_move_filter" model="ir.ui.view">
+    <!-- <record id="view_account_move_filter" model="ir.ui.view">
         <field name="name">Add move type group by</field>
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_account_move_filter" />
@@ -39,5 +39,5 @@
                 />
             </group>
         </field>
-    </record>
+    </record> -->
 </odoo>
