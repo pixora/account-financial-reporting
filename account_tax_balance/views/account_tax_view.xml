@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- Copyright 2016 Lorenzo Battistini - Agile Business Group
-     Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
-     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="view_tax_tree_balance" model="ir.ui.view">
         <field name="name">account.tax.list.balance</field>
@@ -59,13 +56,13 @@
     <record id="view_tax_search_balance" model="ir.ui.view">
         <field name="name">account.tax.search.balance</field>
         <field name="model">account.tax</field>
-        <field eval="100" name="priority" />
+        <field eval="101" name="priority" />
         <field name="arch" type="xml">
             <search string="Account Tax">
                 <field name="name" />
                 <field name="description" string="Short Name" />
                 <field name="type_tax_use" />
-                <group expand="0" string="Group By">
+                <group>
                     <filter
                         name="tax_group"
                         string="Tax Group"
